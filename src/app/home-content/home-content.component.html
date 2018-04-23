@@ -1,312 +1,84 @@
-
-
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Raiju</span>
-      <i class="material-icons">assessment</i>
-      
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation. We hide it in small screens. -->
-      <nav class="mdl-navigation mdl-layout--large-screen-only">
-       
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Raiju</span>
-    <nav class="mdl-navigation">
-      <a routerLink="/" class="mdl-navigation__link" href="">Home</a>
-      <a routerLink="/about" class="mdl-navigation__link" href="">About</a>
-      <a class="mdl-navigation__link" href="">Merch</a>
-      <a class="mdl-navigation__link" href="">Tour</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content" >
-    <div class="page-content">
-
-     <!--- HEADER -->
-        <div class="mdl-grid mdl-grid--no-spacing sec sec--1">
-            <div class="mdl-cell mdl-cell--12-col header"> <!--Header with main title-->
-                <div class="header__title-box">
-                    <h1 class="title-primary">
-                      <span class="title-primary--main">raiju</span>
-                      <span class="title-primary--underline"></span>
-                    </h1>
-                    <!-- <a pagescroll  class=" page-scroll btn btn-white btn-animated">Merch</a> -->
-                  <a [ngx-scroll-to]="ngxScrollToDestination"
-                  [ngx-scroll-to-event]="ngxScrollToEvent"
-                  [ngx-scroll-to-duration]="ngxScrollToDuration"
-                  [ngx-scroll-to-easing]="ngxScrollToEasing"> <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
-                      <i class="material-icons">flash_on</i>
-                    </button></a>
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- Section Two - Youtube-->
-        <div class="mdl-grid mdl-grid--no-spacing sec sec--2">
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet"></div>
-            <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-                
+<!--- HEADER -->
+<div class="mdl-grid mdl-grid--no-spacing sec sec--1">
+  <div class="mdl-cell mdl-cell--12-col header"> <!--Header with main title-->
+      <div class="header__title-box">
+          <h1 class="title-primary">
+            <span class="title-primary--main">raiju</span>
+            <span class="title-primary--underline"></span>
+          </h1>
+          <!-- <a pagescroll  class=" page-scroll btn btn-white btn-animated">Merch</a> -->
+        <a [ngx-scroll-to]="ngxScrollToDestination"
+        [ngx-scroll-to-event]="ngxScrollToEvent"
+        [ngx-scroll-to-duration]="ngxScrollToDuration"
+        [ngx-scroll-to-easing]="ngxScrollToEasing"> <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+            <i class="material-icons">flash_on</i>
+          </button></a>
           
-                <div><iframe class="video"  src="https://www.youtube.com/embed/Dcjup4uxzEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-      
-                          
-                
-            </div>
-            <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet"></div>
-        </div>
-        <!-- Section Three - Merch -->
-        <div id=""  class="mdl-grid mdl-grid--no-spacing sec sec--3">
-            <div class="mdl-cell mdl-cell--12-col">
-                
-            </div>
-        </div>
-
-        <!-- Section Four - About -->
-        <div id="merch" class="mdl-grid mdl-grid--no-spacing sec sec--4">
-            <div class="mdl-cell mdl-cell--12-col">
-                <div class="u-centerMe">
-                    <h1 class="title-secondary">Meet Raiju</h1>
-                 </div>
-           
-                   <div class="row">
-                     <div class="col-1-of-3">
-                         <div class="polaroid">
-                           <div class="polaroid__photo polaroid__photo--p1"><span class="polaroid__name"></span></div>
-                           <a href="#mod1"><div class="polaroid__photo polaroid__photo--p2"></div></a>
-                           <div class="polaroid__photo polaroid__photo--p3"></div>
-                           <a href="#mod2"><div class="polaroid__photo polaroid__photo--p4">
-                              <span class="polaroid__name">hkjhkjhkj</span></div></a>
-                         </div>
-                     </div>
-                     <div class="col-1-of-3">
-                         <div class="polaroid">
-                           <div class="polaroid__photo polaroid__photo--p5"><span class="polaroid__name">Vinnie</span></div>
-                           <div class="polaroid__photo polaroid__photo--p6"></div>
-                           <div class="polaroid__photo polaroid__photo--p7"></div>
-                           <a href="#mod3"><div class="polaroid__photo polaroid__photo--p8"></div></a>
-                         </div>
-                     </div>
-                     <div class="col-1-of-3">
-                         <div class="polaroid">
-                         <a href="#mod4"><div class="polaroid__photo polaroid__photo--p9"></div>
-                           <div class="polaroid__photo polaroid__photo--p10"></div></a>
-                           <a href="#mod5"><div class="polaroid__photo polaroid__photo--p11"></div></a>
-                           <div class="polaroid__photo polaroid__photo--p12"></div>
-                         </div>
-                     </div>
-                   </div>
-            </div>
-        </div>
-
-        <!-- Section Five - Tour -->
-        <div id="tour"  class="mdl-grid mdl-grid--no-spacing sec sec--5 ">
-            <div class="mdl-cell mdl-cell--12-col">
-                
-            </div>
-        </div>
-
-       
-    <!-- END PAGE CONTENT -->
-
+      </div>
+  </div>
 </div>
-    <!-- FOOTER -->
-    <!-- style="flex: 0 0 auto;" keeps footer at bottom -->
-    <footer class="mdl-mega-footer" style="flex: 0 0 auto;">
-      <div class="mdl-mega-footer__middle-section">
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">Details</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Terms</a></li>
-          </ul>
-        </div>
-    
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">This Site</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Usage</a></li>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Contracts</a></li>
-          </ul>
-        </div>
-    
-        <div class="mdl-mega-footer__drop-down-section">
-          <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-          <h1 class="mdl-mega-footer__heading">FAQ</h1>
-          <ul class="mdl-mega-footer__link-list">
-            <li><a href="#">Questions</a></li>
-            <li><a href="#">Answers</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-    
-      </div>
-    
-      <div class="mdl-mega-footer__bottom-section">
-          <i class="material-icons">music_note</i>
-        <div class="mdl-logo">Raiju Music</div>
-        
-        <ul class="mdl-mega-footer__link-list">
-          <li><a href="#">Help</a></li>
-          <li><a href="#">Privacy & Terms</a></li>
-        </ul>
-      </div>
-    
-    </footer>
-     
-    
-</main>
-<!--END OF MLD LAYOUT CONTENT-->
-  
-</div>
-<!---END OF MDL LAYOUT-->
 
-
- <!-- MODAL SECTION -->
-
-
-<!-- <div class="mod" id="mod1">
-    <a href="#section-about" class="mod__close">&times;</a>
-    <div class="mod__content">
-      <div class="mod__bio">
-          <h4>Vinnie Hecht</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      <div class="mod__photo">
-      <img src="https://images.pexels.com/photos/274406/pexels-photo-274406.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-      </div>
-    </div>
-  </div>
-
-  <div class="mod" id="mod2">
-    <a href="#section-about" class="mod__close">&times;</a>
-    <div class="mod__content">
-      <div class="mod__bio">
-          <h4>Sean Johnson</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      <div class="mod__photo">
-      <img src="https://images.pexels.com/photos/756239/pexels-photo-756239.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-      </div>
-    </div>
-  </div>
-
-   <div class="mod" id="mod3">
-    <a href="#section-about" class="mod__close">&times;</a>
-    <div class="mod__content">
-      <div class="mod__bio">
-          <h4>Max Coley</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      <div class="mod__photo">
-      <img src="https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-      </div>
-    </div>
-  </div>
-
-  <div class="mod" id="mod4">
-    <a href="#section-about" class="mod__close">&times;</a>
-    <div class="mod__content">
-      <div class="mod__bio">
-          <h4>Bobby Carroll</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-      <div class="mod__photo">
-      <img src="https://images.pexels.com/photos/167445/pexels-photo-167445.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-      </div>
-    </div>
-  </div>
-
-  <div class="mod" id="mod5">
-    <a href="#section-about" class="mod__close">&times;</a>
-    <div class="mod__content">
-      <div class="mod__bio">
-        <h4>Scott Wagner</h4>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-      <div class="mod__photo">
-      <img src="https://images.pexels.com/photos/167618/pexels-photo-167618.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-      </div>
-    </div>
-  </div> -->
-
-  
-
-
+<!-- Section Two - Youtube-->
+<div class="mdl-grid mdl-grid--no-spacing sec sec--2">
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet"></div>
+  <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
       
-      <div id="mod1" class="mod">
-        <a href="#section-about" class="mod__close">&times;</a>
-       <div class="mod__content  mdl-grid mdl-grid--no-spacing">
-          <div class="mod__bio mdl-cell mdl-cell--6-col">
-              <h4>Vinnie Hecht</h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="mod__photo mdl-cell mdl-cell--5-col">
-          <img src="https://images.pexels.com/photos/274406/pexels-photo-274406.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-          </div>
-        </div>
+
+      <div><iframe class="video"  src="https://www.youtube.com/embed/Dcjup4uxzEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
-      <div id="mod2" class="mod">
-        <a href="#section-about" class="mod__close">&times;</a>
-       <div class="mod__content  mdl-grid mdl-grid--no-spacing">
-          <div class="mod__bio mdl-cell mdl-cell--6-col">
-              <h4>Sean Johnson</h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="mod__photo mdl-cell mdl-cell--5-col">
-          <img src="https://images.pexels.com/photos/756239/pexels-photo-756239.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-          </div>
-        </div>
-      </div>
-      <div id="mod3" class="mod">
-        <a href="#section-about" class="mod__close">&times;</a>
-       <div class="mod__content  mdl-grid mdl-grid--no-spacing">
-          <div class="mod__bio mdl-cell mdl-cell--6-col">
-              <h4>Max Coley</h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="mod__photo mdl-cell mdl-cell--5-col">
-          <img src="https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-          </div>
-        </div>
-      </div>
-      <div id="mod4" class="mod">
-        <a href="#section-about" class="mod__close">&times;</a>
-       <div class="mod__content  mdl-grid mdl-grid--no-spacing">
-          <div class="mod__bio mdl-cell mdl-cell--6-col">
-              <h4>Bobby Carroll</h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="mod__photo mdl-cell mdl-cell--5-col">
-          <img src="https://images.pexels.com/photos/167445/pexels-photo-167445.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-          </div>
-        </div>
-      </div>
-      <div id="mod5" class="mod">
-        <a href="#section-about" class="mod__close">&times;</a>
-       <div class="mod__content  mdl-grid mdl-grid--no-spacing">
-          <div class="mod__bio mdl-cell mdl-cell--6-col">
-              <h4>Scott Wagner</h4>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </div>
-          <div class="mod__photo mdl-cell mdl-cell--5-col">
-          <img src="https://images.pexels.com/photos/167618/pexels-photo-167618.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb" alt="Tour photo" class="mod__img">
-          </div>
-        </div>
-      </div>
-    
-  
-    
+
+                
+      
+  </div>
+  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet"></div>
+</div>
+<!-- Section Three - Merch -->
+<div id=""  class="mdl-grid mdl-grid--no-spacing sec sec--3">
+  <div class="mdl-cell mdl-cell--12-col">
+      
+  </div>
+</div>
+
+<!-- Section Four - About -->
+<div id="merch" class="mdl-grid mdl-grid--no-spacing sec sec--4">
+  <div class="mdl-cell mdl-cell--12-col">
+      <div class="u-centerMe">
+          <h1 class="title-secondary">Meet Raiju</h1>
+       </div>
  
+         <div class="row">
+           <div class="col-1-of-3">
+               <div class="polaroid">
+                 <div class="polaroid__photo polaroid__photo--p1"><span class="polaroid__name"></span></div>
+                 <a href="#mod1"><div class="polaroid__photo polaroid__photo--p2"></div></a>
+                 <div class="polaroid__photo polaroid__photo--p3"></div>
+                 <a href="#mod2"><div class="polaroid__photo polaroid__photo--p4">
+                    <span class="polaroid__name">hkjhkjhkj</span></div></a>
+               </div>
+           </div>
+           <div class="col-1-of-3">
+               <div class="polaroid">
+                 <div class="polaroid__photo polaroid__photo--p5"><span class="polaroid__name">Vinnie</span></div>
+                 <div class="polaroid__photo polaroid__photo--p6"></div>
+                 <div class="polaroid__photo polaroid__photo--p7"></div>
+                 <a href="#mod3"><div class="polaroid__photo polaroid__photo--p8"></div></a>
+               </div>
+           </div>
+           <div class="col-1-of-3">
+               <div class="polaroid">
+               <a href="#mod4"><div class="polaroid__photo polaroid__photo--p9"></div>
+                 <div class="polaroid__photo polaroid__photo--p10"></div></a>
+                 <a href="#mod5"><div class="polaroid__photo polaroid__photo--p11"></div></a>
+                 <div class="polaroid__photo polaroid__photo--p12"></div>
+               </div>
+           </div>
+         </div>
+  </div>
+</div>
+
+<!-- Section Five - Tour -->
+<div id="tour"  class="mdl-grid mdl-grid--no-spacing sec sec--5 ">
+  <div class="mdl-cell mdl-cell--12-col">
+      
+  </div>
+</div>

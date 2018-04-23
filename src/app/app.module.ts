@@ -9,7 +9,7 @@ import { HomeContentComponent } from './home-content/home-content.component';
 import { AboutComponent } from './about/about.component';
 
 import { AppRoutingModule } from './/app-routing.module';
-import { NavComponent } from './nav/nav.component';
+
 
 
 
@@ -19,7 +19,6 @@ import { NavComponent } from './nav/nav.component';
     AppComponent,
     HomeContentComponent,
     AboutComponent,
-    NavComponent
   ],
   imports: [
     BrowserModule,
