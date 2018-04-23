@@ -172,8 +172,10 @@
   background-color: transparent;
 
   @include respond(tab-port) {
+    font-size: 18px;
+    font-weight: 250;
     width: 100%;
-    display: inline-block;
+    display: inline;
 }
 }
 }
