@@ -1,0 +1,38 @@
+///SECIONTS 
+
+.header{ // Contains main title
+    background-color: transparent;
+    height: 95vh;
+    width: 100%;
+    background: url('assets/images/rcbg2.jpeg');
+    background-size: cover;
+}
+
+.sec {
+  
+    width: 100%;
+    
+    &--1 { //Header
+      height: 95vh;
+      
+    }
+    &--2 { // Youtube
+      height: 95vh;
+      
+    }
+    &--3 { // Merch
+      height: 95vh;
+      background-color: yellow;
+    }
+    &--4 { //About
+      height: auto;
+      @include respond(tab-port) {
+        height: 140rem;
+    }
+    }
+    &--5 { //Tour
+      height: 25vh;
+      background-color: red;
+    }
+  }
+  

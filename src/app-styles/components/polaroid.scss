@@ -1,0 +1,285 @@
+//Grid for Polaroids 
+
+.row {
+  max-width: $grid-width;
+  margin: 0 auto;
+  
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+
+    
+  }
+
+  
+ [class^="col-"] {
+   
+   float: left;
+
+   &:not(:last-child) {
+     margin-right: $gutter-horizontal;
+   }
+       
+}
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-horizontal}) /2);
+  }
+  .col-1-of-3 {
+    width: calc((100% - 2 * #{$gutter-horizontal}) /3);
+  }
+
+  .col-2-of-3 {
+    width: calc(2 * ((100% - 2 * #{$gutter-horizontal}) /3) + #{$gutter-horizontal});
+  }
+  .col-1-of-4 {
+    width: calc((100% - 3 * #{$gutter-horizontal}) /4);
+  }
+  .col-2-of-4 {
+    width: calc(2 * ((100% - 3 * #{$gutter-horizontal}) /4) + #{$gutter-horizontal});
+  }
+  .col-3-of-4 {
+    width: calc(3 * ((100% - 3 * #{$gutter-horizontal}) /4) + 2 *  #{$gutter-horizontal});
+  }
+
+}
+
+
+//Photos within polaroid
+
+.photo {
+  position: relative;
+  
+
+  &__box {
+  }
+
+  &__name {
+    z-index: 100;
+    font-family: 'Pacifico', cursive;
+    font-size: 4rem;
+    position: absolute;
+    top: 18rem;
+    left: 5rem;
+    text-align: center;
+    color: black;
+    transform: rotate(-18deg);
+
+    &__name-span {
+      
+    }
+  }
+}
+
+
+//Polaroids
+
+.polaroid {
+    
+    &__name {
+      z-index: 100;
+      color: #1e1c18;
+      text-decoration: none;
+      font-size: 2rem;
+      position: relative;
+      top: 15rem;
+    }
+
+    &__photo {
+
+      width: 18rem;
+      height: 16rem;
+      background: #1e1c18;
+      border: 5px solid #f5f5f5;
+      border-bottom: 50px solid #f5f5f5;
+      box-shadow: 10px 10px 10px 0 rgba(0,0,0, 0.7);
+      overflow: hidden;
+      filter: sepia(70%);
+      position: relative;
+      backface-visibility: hidden;
+      
+        
+        &--p1 { //set - Colorful show
+          background-image: url("https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-0.3.5&s=5a703e99fc6bb05f6dcdabf39ed55f43&auto=format&fit=crop&w=1267&q=80");
+          background-size: cover;
+      
+          top: 10rem;
+          left: 0;
+          transform: rotate(-9deg);
+          
+   
+        }
+        &--p2 { //set - BandMember1
+          background-image: url("https://images.pexels.com/photos/274406/pexels-photo-274406.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+
+          top: -15rem;
+          left: 20rem;
+          transform: rotate(7deg);
+          transition: all .5s;
+          z-index: 100;
+
+          &:hover  {
+            transform: translateY(-2rem) rotate(7deg);;
+            
+          }
+          @include respond(tab-port) { // Sunglasses singer - 1st on mobile purple tint
+            top: -19rem;
+            left: 4.5rem;
+          }
+        }
+        &--p3 { //set Yellow show
+          background-image: url("https://images.unsplash.com/photo-1459749411175-04bf5292ceea?ixlib=rb-0.3.5&s=5305bbef8c3d160b06491d89478c16ca&auto=format&fit=crop&w=1500&q=80");
+          background-size: cover;
+      
+          top: -18rem;
+          left: 15rem;
+          transform: rotate(7deg);
+          @include respond(tab-port) { //Beard - open mouth- 4th on mobile
+            top: 49rem;
+            left: 1rem;
+            transform: rotate(27deg);
+          }
+   
+        }
+        &--p4 { //set - BandMember2
+          background-image: url("https://images.pexels.com/photos/756239/pexels-photo-756239.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: -36rem;
+          left: 1rem;
+          transform: rotate(-57deg);
+          transition: all .5s;
+          z-index: 100;
+
+          &:hover {
+            transform: translateY(-2rem) rotate(-50deg);
+            }
+            @include respond(tab-port) { //short haired basses - brit flag bg - 3rd on mobile
+              top: -9rem;
+              left: 5rem;
+              transform: rotate(-10deg);
+            }
+          }
+
+        &--p5 {//set Red crowd
+          background-image: url("https://images.unsplash.com/uploads/1411160110892ab555b6f/80b0d25e?ixlib=rb-0.3.5&s=721a8246558556ccec51a0cf69655725&auto=format&fit=crop&w=1502&q=80");
+          background-size: cover;
+      
+          top: 10rem;
+          left: 0;
+          transform: rotate(-7deg);
+   
+        }
+        &--p6 { //set - Micpic
+          background-image: url("https://images.pexels.com/photos/879824/pexels-photo-879824.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: 14rem;
+          left: -10rem;
+          transform: rotate(-7deg);
+          
+   
+        }
+        &--p7 {// set Heart hands
+          background-image: url("https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixlib=rb-0.3.5&s=193ed46f6fed7e54ea139337a564da1d&auto=format&fit=crop&w=1500&q=80");
+          background-size: cover;
+      
+          top: -20rem;
+          left: 20rem;
+          transform: rotate(70deg);
+
+          @include respond(tab-port) { //Beard - open mouth- 4th on mobile
+            top: 65rem;
+            left: -1rem;
+            transform: rotate(17deg);
+          }
+   
+        }
+        &--p8 {//set - BandMember4
+          background-image: url("https://images.pexels.com/photos/210922/pexels-photo-210922.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: -29rem;
+          left: 5rem;
+          transform: rotate(-47deg);
+          transition: all .5s;
+          z-index: 100;
+
+          &:hover {
+            transform: rotate(-40deg) translateY(-4rem) ;
+          }
+
+          @include respond(tab-port) { //Beard - open mouth- 4th on mobile
+            top: 15rem;
+            left: -6rem;
+            transform: rotate(17deg);
+          }
+   
+        }
+        &--p9 {//set BandMember4
+          background-image: url("https://images.pexels.com/photos/167445/pexels-photo-167445.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: 10rem;
+          left: -15rem;
+          transform: rotate(27deg);
+          transition: all .5s;
+          z-index: 100;
+
+          &:hover {
+            transform: rotate(27deg) translateY(-2rem) ;
+          }
+
+          @include respond(tab-port) { // Bobby's - Ukilayee guy - jean jacket -2nd on mobile
+            top: 24rem;
+            left: -18rem;
+          }
+   
+        }
+        &--p10 {// DJ Lights
+          background-image: url("https://images.pexels.com/photos/426976/pexels-photo-426976.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: 22rem;
+          left: -15rem;
+          transform: rotate(23deg);
+   
+        }
+        &--p11 {//set BandMember5 - DRUMMER
+          background-image: url("https://images.pexels.com/photos/167618/pexels-photo-167618.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: -10rem;
+          left: 7rem;
+          transform: rotate(-7deg);
+          transition: all .6s;
+          z-index: 100;
+
+          &:hover {
+            transform: rotate(-7deg) translateY(-2rem) ;
+          }
+
+          @include respond(tab-port) { // Drummer - Face paint - Last on mobile
+            top: 60rem;
+            left: -18rem;
+          }
+   
+        }
+        &--p12 {// Crowd angle - far right
+          background-image: url("https://images.pexels.com/photos/196652/pexels-photo-196652.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb");
+          background-size: cover;
+      
+          top: -58rem;
+          left: 6rem;
+          transform: rotate(97deg);
+          @include respond(tab-port) { //Beard - open mouth- 4th on mobile
+            top: 9rem;
+            left: -17rem;
+            transform: rotate(-27deg);
+          }
+   
+        }
+    }
+
+}

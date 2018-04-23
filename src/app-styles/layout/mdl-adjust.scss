@@ -1,0 +1,15 @@
+.mdl-layout__content::-webkit-scrollbar { width: 0 !important } //Transparent Scrollbar
+
+.demo-layout-transparent {  // Part of Nav with Main Background image. Header contains title
+    background: url('assets/images/rcbg2.jpeg');
+    background-size: cover;
+  }
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button { //Changes nav title & hamburger to white
+   
+    color: white;
+}
+
+.mdl-layout__header {
+      background-color: black;
+}

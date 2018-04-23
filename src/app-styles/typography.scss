@@ -1,0 +1,50 @@
+.second-title {
+    background-color: tomato;
+    text-align: center;
+}
+
+
+.title-primary {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 80;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.title-primary--main {
+    letter-spacing: 10px;
+    display: block;
+    margin-bottom: 60px;
+    animation: fromRight 1.3s ease-out;
+}
+
+.title-primary--underline {
+    width: 100%;
+    border-bottom: 5px solid #fff;
+    display: block;
+
+    animation: fromLeft 1.3s ease-out;
+}
+
+.title-secondary {
+    color: black;
+    font-size: 55px;
+    font-weight: 80;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+
+    transition: all .2s;
+}
+
+.title-secondary:hover {
+    transform: rotate(8deg);
+}
+
+.header__title-box {
+    position: absolute;
+    top: 30%;
+    left: 1.5%;
+    text-align: center;
+    backface-visibility: hidden;
+}
