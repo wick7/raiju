@@ -17,13 +17,40 @@
 @import 'app-styles/typography.scss';
 
 
-  
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
 
 
   
 
 
+.btn {
+    
+    text-align: center;
+    height: auto;
 
+    &__button {
+        
+        font-size: 1.5rem;
+        vertical-align: middle;
+        height: 6rem;
+        width: 18rem;
+        border-radius: 15px;
+        transition: .4s all ease;
+
+        &:hover {
+            background-color: white;
+            transform: translateY(-7px);
+        }
+    }
+
+    &__icon {
+        font-size: 2rem;
+        margin-bottom: .3rem;
+    }
+
+}
+  
+  
       
 
 

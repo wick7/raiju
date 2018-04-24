@@ -1,5 +1,6 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
 import { ScrollToAnimationEasing, ScrollToEvent, ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
+
 import {
   trigger,
   state,
@@ -7,6 +8,9 @@ import {
   animate,
   transition
 } from '@angular/animations';
+
+
+
 
 
 

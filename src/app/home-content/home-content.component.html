@@ -1,3 +1,5 @@
+
+  
 <!--- HEADER -->
 <div class="mdl-grid mdl-grid--no-spacing sec sec--1">
   <div class="mdl-cell mdl-cell--12-col header"> <!--Header with main title-->
@@ -10,7 +12,7 @@
         <a [ngx-scroll-to]="ngxScrollToDestination"
         [ngx-scroll-to-event]="ngxScrollToEvent"
         [ngx-scroll-to-duration]="ngxScrollToDuration"
-        [ngx-scroll-to-easing]="ngxScrollToEasing"> <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+        [ngx-scroll-to-easing]="ngxScrollToEasing"> <button mat-fab>
             <i class="material-icons">flash_on</i>
           </button></a>
           
@@ -78,7 +80,12 @@
 
 <!-- Section Five - Tour -->
 <div id="tour"  class="mdl-grid mdl-grid--no-spacing sec sec--5 ">
-  <div class="mdl-cell mdl-cell--12-col">
-      
+    <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col mdl-cell--middle btn">
+
+        <button routerLink="/tour" mat-button class="btn__button">Tour Dates
+            <i class="material-icons btn__icon">list</i>
+        </button>
   </div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
 </div>

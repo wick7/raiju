@@ -10,7 +10,8 @@ import { AboutComponent } from './about/about.component';
 
 import { AppRoutingModule } from './/app-routing.module';
 
-
+import { MatButtonModule } from '@angular/material';
+import { TourComponent } from './tour/tour.component';
 
 
 
@@ -19,13 +20,16 @@ import { AppRoutingModule } from './/app-routing.module';
     AppComponent,
     HomeContentComponent,
     AboutComponent,
+    TourComponent,
   ],
   imports: [
     BrowserModule,
     ScrollToModule.forRoot(),
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatButtonModule
   ],
+  exports:[MatButtonModule],
   providers: [],
   bootstrap: [AppComponent]
 })
