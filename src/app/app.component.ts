@@ -1,4 +1,4 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener, ElementRef, OnInit } from '@angular/core';
 import { ScrollToAnimationEasing, ScrollToEvent, ScrollToOffsetMap } from '@nicky-lenaers/ngx-scroll-to';
 
 import {
@@ -8,7 +8,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
-
+import { Router, NavigationEnd } from '@angular/router';
 
 
 
@@ -33,7 +33,7 @@ import {
     ])
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
   public ngxScrollToDestination: string;
   public ngxScrollToEvent: ScrollToEvent;
@@ -45,7 +45,7 @@ export class AppComponent {
   title = 'app';
   state = 'hide'
 
-  constructor(public el: ElementRef) {
+  constructor(public el: ElementRef, private router: Router) {
     this.ngxScrollToDestination = 'merch';
     this.ngxScrollToEvent = 'click';
     this.ngxScrollToDuration = 1600;
@@ -58,20 +58,25 @@ export class AppComponent {
   }
 
   
-  @HostListener('window:scroll', ['$event'])
-  checkScroll() {
-    const componentPosition = this.el.nativeElement.offsetTop
-    const scrollPosition = window.pageYOffset
 
-    if (scrollPosition >= componentPosition) {
-      this.state = 'show'
-    } else {
-      this.state = 'hide'
-    }
 
-  }
+  @HostListener('window:click', ['$event'])
+    onWindowScroll($event) {
+    console.log("scrolling...");
+}
+
+ngOnInit() {
+  this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+          return;
+      }
+      window.scrollTo(0, 0) // for example
+  });
+}
  
-
+onActivate() {
+  window.scrollTo(0, 0);
+}
   
 
 

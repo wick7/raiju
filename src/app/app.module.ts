@@ -12,6 +12,8 @@ import { AppRoutingModule } from './/app-routing.module';
 
 import { MatButtonModule } from '@angular/material';
 import { TourComponent } from './tour/tour.component';
+import { ScrollerDirective } from './scroller.directive';
+import { NavDirective } from './nav.directive';
 
 
 
@@ -21,6 +23,8 @@ import { TourComponent } from './tour/tour.component';
     HomeContentComponent,
     AboutComponent,
     TourComponent,
+    ScrollerDirective,
+    NavDirective,
   ],
   imports: [
     BrowserModule,
