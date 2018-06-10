@@ -12,8 +12,10 @@
         <a [ngx-scroll-to]="ngxScrollToDestination"
         [ngx-scroll-to-event]="ngxScrollToEvent"
         [ngx-scroll-to-duration]="ngxScrollToDuration"
-        [ngx-scroll-to-easing]="ngxScrollToEasing"> <button mat-fab>
-            <i class="material-icons">flash_on</i>
+        [ngx-scroll-to-easing]="ngxScrollToEasing"> <button appHeader mat-fab>
+            <i  class="material-icons header-icon">flash_on</i>
+            <span class="mdl-button__ripple-container">
+            <span  class="mdl-ripple" style="width: 160.392px; height: 160.392px; transform: translate(-50%, -50%) translate(34px, 30px);"></span></span>
           </button></a>
           
       </div>
@@ -22,17 +24,17 @@
 
 <!-- Section Two - Youtube-->
 <div class="mdl-grid mdl-grid--no-spacing sec sec--2">
-  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet"></div>
-  <div class="mdl-cell mdl-cell--8-col mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+  <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--6-col-phone">
       
 
-      <!-- <div><iframe class="video"  src="https://www.youtube.com/embed/Dcjup4uxzEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div> -->
+    <!-- <iframe class="video" src="https://www.youtube.com/embed/Dcjup4uxzEQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
 
-                
-      
+    <div class="vid">
+      <iframe class="vid--frame" width="20" height="15" src="https://www.youtube.com/embed/Dcjup4uxzEQ" frameborder="0" allowfullscreen></iframe>
   </div>
-  <div class="mdl-cell mdl-cell--2-col mdl-cell--1-col-tablet"></div>
+
+
+  </div>
 </div>
 <!-- Section Three - Merch -->
 <div id=""  class="mdl-grid mdl-grid--no-spacing sec sec--3">

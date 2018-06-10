@@ -60,24 +60,36 @@ export class AppComponent implements OnInit {
   
 
 
-  @HostListener('window:click', ['$event'])
-    onWindowScroll($event) {
-    console.log("scrolling...");
-}
+//   @HostListener('window:click', ['$event'])
+//     onWindowScroll($event) {
+//     console.log("scrolling...");
+// }
 
 ngOnInit() {
-  this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-          return;
-      }
-      window.scrollTo(0, 0) // for example
-  });
+  // this.router.events.subscribe((evt) => {
+  //     if (!(evt instanceof NavigationEnd)) {
+  //         return;
+  //     }
+  //     window.scrollTo(0, 0) // for example
+  // });
 }
  
 onActivate() {
   window.scrollTo(0, 0);
 }
   
+onClick($event) {
+  console.log("scrolling...");
+  console.log('class list', this.el.nativeElement.classList);
+  
+  if (this.el.nativeElement.classList.length == 1) {
+    this.el.nativeElement.classList.add('is-visible');
+    
+  }else if(this.el.nativeElement.classList.length == 2) {
+    this.el.nativeElement.classList.remove('is-visible');
+  }
+  
+  }
 
 
 }

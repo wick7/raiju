@@ -3,6 +3,8 @@
 <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
+            <div class="mdl-layout__drawer-button"><i class="material-icons nav-icon"></i>
+            </div>
           <!-- Title -->
           <span  class="mdl-layout-title">Raiju</span>
           <i class="material-icons">assessment</i>
@@ -17,7 +19,7 @@
       </header>
       <div appNav class="mdl-layout__drawer">
         <span class="mdl-layout-title">Raiju</span>
-        <nav class="mdl-navigation">
+        <nav class="mdl-navigation" >
           <a routerLink="/" class="mdl-navigation__link" href="#">Home</a>
           <a routerLink="/about" class="mdl-navigation__link" href="#">About</a>
           <a routerLink="/tour" class="mdl-navigation__link" href="#">Tour</a>
@@ -27,7 +29,7 @@
       <div class="page-content">
   
        <!---ALL CONTENT HERE-->
-        <router-outlet (activate)="onActivate($event)" ></router-outlet>
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
          
       <!-- END PAGE CONTENT -->
   

@@ -10,7 +10,7 @@ export class NavDirective {
   private initialClass: string;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
-    this.initialClass = 'mdl-layout__drawer.is-visible';
+    // this.initialClass = 'mdl-layout__drawer.is-visible';
    
    }
 
@@ -25,20 +25,20 @@ export class NavDirective {
 
 
 @HostListener('window:click', ['$event'])
-onClick($event) {
-console.log("scrolling...");
-console.log('class list', this.el.nativeElement.classList);
+onClick() {
+// console.log(event.srcElement.className);
+// console.log('class list', this.el);
+console.log('fire nav directive');
 
-if (this.el.nativeElement.classList[0] === 'mdl-layout__drawer') {
-  this.el.nativeElement.classList.add(this.initialClass);
-  this.el.nativeElement.classList.remove('mdl-layout__drawer');
-}else if(this.el.nativeElement.classList[0] === 'mdl-layout__drawer.is-visible') {
-  this.el.nativeElement.classList.add('mdl-layout__drawer');
-  this.el.nativeElement.classList.remove('mdl-layout__drawer.is-visible');
+if (this.el.nativeElement.classList.length == 1 && event.srcElement.className == "material-icons nav-icon" ) {
+  this.el.nativeElement.classList.add('is-visible');
+  
+}else if(this.el.nativeElement.classList.length == 2) {
+  this.el.nativeElement.classList.remove('is-visible');
 }
 
 }
 
-
 }
 
+// clientX: 27, clientY: 23
